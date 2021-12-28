@@ -6,6 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -77,7 +78,7 @@ body{
 }
 
 .sideChat__information__text h4{
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .sideChat__information__text p{
@@ -89,7 +90,168 @@ body{
     cursor: pointer;
 }
 
+.sideChat__search{
+    background-color: #f8f8f8;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #ddd   ;
+}
+
+.sideChat__search label{
+    background-color: #fff;
+    outline: transparent;
+    border-radius: 30px;
+    padding: 0px 10px;
+}
+
+.sideChat__search label input{
+    border: transparent;
+    outline: transparent;
+    height: 30px;
+    padding: 0px 10px;
+    width: 330px;
+}
+
+.sideChat__chats{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+}
+
+.sideChat__chats__chat{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    transition: 0.2s ease-in-out background-color;
+    padding: 0px 10px;
+    height: 80px;
+}
+.sideChat__chats__chat:hover{
+    background-color: #edededa8;
+    cursor: pointer;
+}
+
+/* DEIXAR CHAT COMO MARCADO */
+#chat1{
+    background-color: #ededed;
+}
+
+.sideChat__chats__chat__image{
+    width: 10%;
+}
+
+.sideChat__chats__chat__image img{
+    width: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sideChat__chats__chat__message{
+    width: 70%;
+    padding-left: 30px;
+}
+
+.sideChat__chats__chat__message h4, .sideChat__chats__chat__message p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sideChat__chats__chat__message h4{
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding-bottom: 4px;
+}
+
+.sideChat__chats__chat__message p{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.sideChat__chats__chat__message i{
+    padding-right: 5px;
+}
+
+.sideChat__chats__chat__time{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sideChat__chats__chat__time span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #666;
+}
+
 .contentChat{
     box-sizing: border-box;
     width: 70vw;
+    background-color: #EDEDED;
+    height: 100vh;
 }
+
+.contentChat__header{
+    height: 9.5vh;
+    border-bottom: 1px solid #ddd;
+}
+
+.contentChat__body{
+    height: 81vh;
+    background-image: url("imagens/background-chat.png");
+    overflow-y: auto;
+}
+
+.contentChat__footer{
+    height: 9.5vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contentChat__footer__anexo{
+    width: 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.contentChat__footer__anexo i{
+    padding: 0px 10px;
+    font-size: 1.3rem;
+    opacity: 0.6;
+}
+
+.contentChat__footer__message{
+    width: 84%;
+}
+
+.contentChat__footer__message input{
+    width: 100%;
+    border: 1px solid #ddd;
+    outline: transparent;
+    border-radius: 15px;
+    height: 40px;
+    padding: 0px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.contentChat__footer__voice{
+    width: 6%;
+    display: flex;
+    justify-content: center;
+}
+
+.contentChat__footer__voice i{
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+
+
