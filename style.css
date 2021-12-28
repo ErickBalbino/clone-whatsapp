@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sideChat{
+    box-sizing: border-box;
+    width: 30vw;
+    overflow: auto;
+}
+
+.sideChat__header{
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 15px;
+    border: 1px solid #ddd;
+}
+
+.sideChat__header img{
+    width: 25px;
+}
+
+.sideChat__header i{
+    font-size: 1rem;
+}
+
+.sideChat__header__perfil i{
+    font-size: 2rem;
+}
+
+.sideChat__header__icons{
+    display: flex;
+    align-items: center;
+}
+
+.sideChat__header__icons img, .sideChat__header__icons i{
+    margin: 0px 15px;
+}
+
+.sideChat__information{
+    height: 100px;
+    background-color: #9DE1FE;
+    display: flex;
+    align-items: center;
+}
+
+.sideChat__information__icon{
+    padding: 0px 15px;
+}
+
+.sideChat__information__icon i{
+    background-color: #fff;
+    font-size: 1.2rem;
+    color: #A3E3FE;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.sideChat__information__text h4, .sideChat__information__text p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.sideChat__information__text h4{
+    font-size: 1rem;
+}
+
+.sideChat__information__text p{
+    font-size: 0.8rem;
+}
+
+.sideChat__information__text p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contentChat{
+    box-sizing: border-box;
+    width: 70vw;
+}
